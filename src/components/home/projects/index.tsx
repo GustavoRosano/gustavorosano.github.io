@@ -1,7 +1,6 @@
-import styles from '../../../styles/Home/projects.module.css'
+import styles from '../../../styles/Home/projects/projects.module.css'
 import React from 'react'
 
-import Cards from './cards';
 import CardsDesktop from './cards/desktop';
 import CardsMobile from './cards/tablet-mobile';
 
@@ -13,7 +12,6 @@ const Projects = () => {
             <div className={styles.projectsContainer}>
                 <h2 className={styles.title}>Projetos</h2>
                 <div className={styles.carouselContainer}>
-                    {/* <Cards /> */}
                     <CardsDesktop />
                     <CardsMobile />
                 </div>

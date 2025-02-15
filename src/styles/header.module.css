@@ -10,6 +10,7 @@
     background: rgba(21, 21, 21, 0.75);
     backdrop-filter: blur(10px);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 99;
 }
 
 .headerContainer {

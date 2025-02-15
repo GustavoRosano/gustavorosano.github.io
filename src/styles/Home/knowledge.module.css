@@ -1,0 +1,200 @@
+.knowledge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 60px 0 100px;
+}
+
+.knowledgeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #FFF;
+    padding-top: 60px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 800;
+    border-bottom: 3px solid #FFF;
+    display: flex;
+    justify-content: center;
+    max-width: 391px;
+    width: 100%;
+    margin-bottom: 90px;
+    text-transform: uppercase;
+}
+
+/* SLIDER */
+.slider {
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, #151515 0%, #15151500 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+
+.slideTrack {
+    display: flex;
+    width: calc(250px * 18);
+    gap: 77px;
+    animation: scroll 40s linear infinite;
+}
+
+/* .slideTrack:hover {
+    animation-play-state: paused;
+} */
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+.slide {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.image {
+    width: 100%;
+    transition: transform 1s;
+}
+
+.image:hover {
+    transform: translateZ(20px);
+}
+
+.next {
+    width: 250px;
+    height: 53px;
+}
+
+.react {
+    width: 150px;
+    height: 193px;
+}
+
+.tailwind {
+    width: 165px;
+    height: 100px;
+}
+
+.typescript {
+    width: 122px;
+    height: 123px;
+}
+
+.vtex {
+    width: 323px;
+    height: 91px;
+}
+
+.shopify {
+    width: 131px;
+    height: 150px;
+}
+
+.wake {
+    width: 370px;
+    height: 150px;
+}
+
+@media screen and (max-width: 576px) {
+    .knowledge {
+        padding: 30px 40px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .slideTrack {
+        gap: 30px;
+    }
+
+    .next {
+        width: 140px;
+        height: 30px;
+    }
+    
+    .react {
+        width: 67px;
+        height: 84px;
+    }
+    
+    .tailwind {
+        width: 87px;
+        height: 52px;
+    }
+    
+    .typescript {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .vtex {
+        width: 190px;
+        height: 53px;
+    }
+    
+    .shopify {
+        width: 71px;
+        height: 82px;
+    }
+    
+    .wake {
+        width: 176px;
+        height: 72px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+    .knowledge {
+        padding: 60px 40px 60px;
+    }
+
+    .title {
+        font-size: 32px;
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .knowledgeContainer {
+        max-width: 1480px;
+    }
+}

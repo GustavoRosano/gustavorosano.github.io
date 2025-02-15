@@ -1,4 +1,4 @@
-import styles from '../../../../styles/Home/projects.module.css';
+import styles from '../../../../styles/Home/projects/projects.module.css';
 import React, { useState, useEffect } from 'react';
 
 import mariaDolores from "@/assets/png/maria-dolores.png";
