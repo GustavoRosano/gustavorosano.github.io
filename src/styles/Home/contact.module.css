@@ -1,0 +1,169 @@
+.contact {
+    background-image: url('../../assets/png/contact-background.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 165px 0;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 700;
+    width: 52%;
+    margin-bottom: 25px;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 400;
+    width: 56%;
+    margin-bottom: 40px;
+}
+
+/* FORMULÁRIO */
+.formaContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.input {
+    max-width: 451px;
+    width: 100% !important;
+    height: 56px;
+}
+
+.formButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    max-width: 451px;
+    width: 100% !important;
+    margin-top: 70px !important;
+}
+
+.whatsappButton {
+    background-color: #078700;
+    border: none;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px;
+    border-radius: 22px;
+}
+
+.whatsappButton:hover {
+    background-color: #099902;
+}
+
+.mailButton {
+    background-color: #004687;
+    border: none;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px;
+    border-radius: 22px;
+}
+
+.mailButton:hover {
+    background-color: #004e97;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 451px;
+    width: 100%;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.socialMediaIcon {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 576px) {
+    .contact {
+        padding: 75px 40px;
+    }
+
+    .contactContainer {
+        align-items: center;
+    }
+
+    .title {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 37px;
+    }
+
+    .text {
+        font-size: 17px;
+        width: 100%;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+
+    .formButtons {
+        flex-direction: column;
+        gap: 15px;
+        width: 300px !important;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+    .contact {
+        padding: 75px 40px;
+    }
+
+    .contactContainer {
+        align-items: center;
+    }
+
+    .title {
+        font-size: 40px;
+        width: 72%;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 18px;
+        width: 74%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .input {
+        max-width: 600px;
+        width: 600px !important;
+        height: 56px;
+    }
+
+    .socialMedia {
+        justify-content: flex-start;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .contactContainer {
+        max-width: 1480px;
+    }
+}
