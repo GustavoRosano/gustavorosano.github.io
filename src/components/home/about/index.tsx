@@ -1,13 +1,46 @@
 import styles from '../../../styles/Home/about.module.css'
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Image from 'next/image';
 
 import ProfilePicture from '../../../assets/png/profile-picture.png'
 
+
 const About = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const aboutRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(entry.target);
+                }
+            },
+            {
+                threshold: 0.1,
+            }
+        );
+
+        if (aboutRef.current) {
+            observer.observe(aboutRef.current);
+        }
+
+        return () => {
+            if (aboutRef.current) {
+                observer.unobserve(aboutRef.current);
+            }
+        };
+    }, []);
+
 
     return (
-        <div className={styles.about}>
+        <div 
+            id='sobre-mim' 
+            className={`${styles.about} ${isVisible ? styles.animate : ''}`}
+            ref={aboutRef}
+        >
+
             <div className={styles.aboutContainer}>
                 <h2 className={styles.aboutTitle}>Sobre Mim</h2>
                 <div className={styles.aboutContent}>

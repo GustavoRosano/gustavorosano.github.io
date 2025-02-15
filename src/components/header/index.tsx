@@ -10,6 +10,13 @@ const Header: React.FC = () => {
         setMenuOpen(!menuOpen);
     };
 
+    const scrollToSection = (id: string) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <>
             <div className={styles.header}>
@@ -19,11 +26,11 @@ const Header: React.FC = () => {
                         <p className={styles.name}>Gustavo Rosano</p>
                     </div>
                     <div className={styles.linksContainer}>
-                        <a href='/' className={styles.headerLink}>Início</a>
-                        <a href='/' className={styles.headerLink}>Sobre Mim</a>
-                        <a href='/' className={styles.headerLink}>Projetos</a>
-                        <a href='/' className={styles.headerLink}>Conhecimentos</a>
-                        <a href='/' className={styles.headerLink}>Contato</a>
+                        <button className={styles.headerLink} onClick={() => scrollToSection("inicio")}>Início</button>
+                        <button className={styles.headerLink} onClick={() => scrollToSection("sobre-mim")}>Sobre Mim</button>
+                        <button className={styles.headerLink} onClick={() => scrollToSection("projetos")}>Projetos</button>
+                        <button className={styles.headerLink} onClick={() => scrollToSection("conhecimentos")}>Conhecimentos</button>
+                        <button className={styles.headerLink} onClick={() => scrollToSection("contato")}>Contato</button>
                     </div>
                 </div>
             </div>
@@ -39,11 +46,11 @@ const Header: React.FC = () => {
             </div>
 
             <div className={`${styles.mobileMenu} ${menuOpen ? styles.open : ""}`}>
-                <a href='/' className={styles.mobileLink} onClick={toggleMenu}>Início</a>
-                <a href='/' className={styles.mobileLink} onClick={toggleMenu}>Sobre Mim</a>
-                <a href='/' className={styles.mobileLink} onClick={toggleMenu}>Projetos</a>
-                <a href='/' className={styles.mobileLink} onClick={toggleMenu}>Conhecimentos</a>
-                <a href='/' className={styles.mobileLink} onClick={toggleMenu}>Contato</a>
+                <button className={styles.mobileLink} onClick={() => { scrollToSection("inicio"); toggleMenu(); }}>Início</button>
+                <button className={styles.mobileLink} onClick={() => { scrollToSection("sobre-mim"); toggleMenu(); }}>Sobre Mim</button>
+                <button className={styles.mobileLink} onClick={() => { scrollToSection("projetos"); toggleMenu(); }}>Projetos</button>
+                <button className={styles.mobileLink} onClick={() => { scrollToSection("conhecimentos"); toggleMenu(); }}>Conhecimentos</button>
+                <button className={styles.mobileLink} onClick={() => { scrollToSection("contato"); toggleMenu(); }}>Contato</button>
             </div>
         </>
     );

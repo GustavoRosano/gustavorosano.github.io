@@ -8,7 +8,7 @@ import CardsMobile from './cards/tablet-mobile';
 const Projects = () => {
 
     return (
-        <div className={styles.projects}>
+        <div id='projetos' className={styles.projects}>
             <div className={styles.projectsContainer}>
                 <h2 className={styles.title}>Projetos</h2>
                 <div className={styles.carouselContainer}>

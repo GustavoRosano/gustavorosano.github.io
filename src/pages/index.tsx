@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
     <Head>
-      <title>Sobre mim | Gustavo</title>
+      <title>Gustavo Teixeira</title>
     </Head>
       <main>
         <PrincipalSection />

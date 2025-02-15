@@ -16,7 +16,17 @@ const PrincipalSection = () => {
                     <p className={styles.firstText}>Criando interfaces funcionais e encantadoras.</p>
                     <h1 className={styles.title}>Sou Gustavo Rosano, Desenvolvedor Front-end</h1>
                     <p className={styles.secondText}>Apaixonado por tecnologia e inovação.</p>
-                    <button className={styles.button}>Conheça minha jornada</button>
+                    <button 
+                        className={styles.button}
+                        onClick={() => {
+                            document.getElementById('sobre-mim')?.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }}
+                    >
+                        Conheça minha jornada
+                    </button>
+
                     <div className={styles.socialMedia}>
                         <a href='https://github.com/GustavoRosano' target="_blank" rel="noopener noreferrer"><Image src={Github} alt='github' className={styles.socialMediaIcon} /></a>
                         <a href='https://www.linkedin.com/in/gustavo-rosano/' target="_blank" rel="noopener noreferrer"><Image src={Linkedin} alt='Linkedin' className={styles.socialMediaIcon} /></a>

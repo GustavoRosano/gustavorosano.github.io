@@ -42,7 +42,7 @@ const Contact = () => {
     };
 
     return (
-        <div className={styles.contact}>
+        <div id='contato' className={styles.contact}>
             <div className={styles.contactContainer}>
                 <h2 className={styles.title}>Entre em contato e vamos criar algo incrível!</h2>
                 <p className={styles.text}>
