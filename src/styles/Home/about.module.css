@@ -119,3 +119,9 @@
         height: 497px;
     }
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+    .aboutContainer {
+        max-width: 1290px !important;
+    }
+}

@@ -194,3 +194,10 @@
         padding-top: 50px;
     }
 }
+
+
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+    .headerContainer {
+        max-width: 1290px !important;
+    }
+}

@@ -200,3 +200,9 @@
     }
     
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+    .projectsContainer {
+        max-width: 1290px !important;
+    }
+}
