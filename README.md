@@ -3,7 +3,7 @@
 Bem-vindo ao meu portfólio! 🚀  
 Aqui você encontrará um pouco sobre mim, meus projetos e conhecimentos na área de **desenvolvimento front-end**.
 
-![Portfólio Preview](https://gustavorosano.netlify.app) <!-- Substitua pelo link ou caminho correto da imagem -->
+![Portfólio Preview](https://gustavorosano.netlify.app)
 
 ## 🛠️ Tecnologias Utilizadas
 
