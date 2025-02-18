@@ -5,6 +5,7 @@
     align-items: center;
     width: 100%;
     padding: 60px 0 100px;
+    background-color: #FFF0D4;
 }
 
 .knowledgeContainer {
@@ -13,14 +14,15 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    border-top: 1px solid #FFF;
+    border-top: 1px solid #000;
     padding-top: 60px;
 }
 
 .title {
     font-size: 40px;
     font-weight: 800;
-    border-bottom: 3px solid #FFF;
+    border-bottom: 3px solid #000;
+    color: #000;
     display: flex;
     justify-content: center;
     max-width: 391px;
@@ -41,7 +43,7 @@
 
 .slider::before,
 .slider::after {
-    background: linear-gradient(to right, #151515 0%, #15151500 100%);
+    background: linear-gradient(to right, #FFF0D4 0%, #FFF0D400 100%);
     content: "";
     height: 100%;
     position: absolute;

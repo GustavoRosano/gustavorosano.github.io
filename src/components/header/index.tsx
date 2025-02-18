@@ -27,9 +27,9 @@ const Header: React.FC = () => {
                     </div>
                     <div className={styles.linksContainer}>
                         <button className={styles.headerLink} onClick={() => scrollToSection("inicio")}>Início</button>
-                        <button className={styles.headerLink} onClick={() => scrollToSection("sobre-mim")}>Sobre Mim</button>
                         <button className={styles.headerLink} onClick={() => scrollToSection("projetos")}>Projetos</button>
                         <button className={styles.headerLink} onClick={() => scrollToSection("conhecimentos")}>Conhecimentos</button>
+                        <button className={styles.headerLink} onClick={() => scrollToSection("sobre-mim")}>Sobre Mim</button>
                         <button className={styles.headerLink} onClick={() => scrollToSection("contato")}>Contato</button>
                     </div>
                 </div>
@@ -47,9 +47,9 @@ const Header: React.FC = () => {
 
             <div className={`${styles.mobileMenu} ${menuOpen ? styles.open : ""}`}>
                 <button className={styles.mobileLink} onClick={() => { scrollToSection("inicio"); toggleMenu(); }}>Início</button>
-                <button className={styles.mobileLink} onClick={() => { scrollToSection("sobre-mim"); toggleMenu(); }}>Sobre Mim</button>
                 <button className={styles.mobileLink} onClick={() => { scrollToSection("projetos"); toggleMenu(); }}>Projetos</button>
                 <button className={styles.mobileLink} onClick={() => { scrollToSection("conhecimentos"); toggleMenu(); }}>Conhecimentos</button>
+                <button className={styles.mobileLink} onClick={() => { scrollToSection("sobre-mim"); toggleMenu(); }}>Sobre Mim</button>
                 <button className={styles.mobileLink} onClick={() => { scrollToSection("contato"); toggleMenu(); }}>Contato</button>
             </div>
         </>
