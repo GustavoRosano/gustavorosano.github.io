@@ -28,7 +28,7 @@ const PrincipalSection = () => {
                     </button>
 
                     <div className={styles.socialMedia}>
-                        <a href='https://github.com/GustavoRosano' target="_blank" rel="noopener noreferrer"><Image src={Github} alt='github' className={styles.socialMediaIcon} /></a>
+                        <a href='https://github.com/GustavoRosano/portifolio-gustavo-rosano' target="_blank" rel="noopener noreferrer"><Image src={Github} alt='github' className={styles.socialMediaIcon} /></a>
                         <a href='https://www.linkedin.com/in/gustavo-rosano/' target="_blank" rel="noopener noreferrer"><Image src={Linkedin} alt='Linkedin' className={styles.socialMediaIcon} /></a>
                         <a href='https://wa.me/5511988672712' target="_blank" rel="noopener noreferrer"><Image src={Whatsapp} alt='Whatsapp' className={styles.socialMediaIcon} /></a>
                     </div>
@@ -47,7 +47,7 @@ const PrincipalSection = () => {
                     Conheça minha jornada
                 </button>
                 <div className={`${styles.socialMedia} ${styles.socialMediaMobile}`}>
-                    <a href='https://github.com/GustavoRosano' target="_blank" rel="noopener noreferrer"><Image src={Github} alt='github' className={styles.socialMediaIcon} /></a>
+                    <a href='https://github.com/GustavoRosano/portifolio-gustavo-rosano' target="_blank" rel="noopener noreferrer"><Image src={Github} alt='github' className={styles.socialMediaIcon} /></a>
                     <a href='https://www.linkedin.com/in/gustavo-rosano/' target="_blank" rel="noopener noreferrer"><Image src={Linkedin} alt='Linkedin' className={styles.socialMediaIcon} /></a>
                     <a href='https://wa.me/5511988672712' target="_blank" rel="noopener noreferrer"><Image src={Whatsapp} alt='Whatsapp' className={styles.socialMediaIcon} /></a>
                 </div>
