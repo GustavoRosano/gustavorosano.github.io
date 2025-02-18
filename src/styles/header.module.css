@@ -159,6 +159,11 @@
         justify-content: center;
     }
 
+    .logo {
+        width: 18px;
+        height: 32px;
+    }
+
     .mobileMenu.open {
         top: 66px;
         width: 300px;

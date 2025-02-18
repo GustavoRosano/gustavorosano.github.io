@@ -5,8 +5,10 @@
 }
 
 .cardMobile {
-    width: 396px;
-    height: 300px;
+    max-width: 396px;
+    width: 100%;
+    min-height: 300px;
+    height: auto;
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -65,6 +67,8 @@
     flex-direction: row;
     gap: 7px;
     margin-top: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .technologieMobile {
