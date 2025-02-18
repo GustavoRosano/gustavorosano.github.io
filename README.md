@@ -28,4 +28,4 @@ O design do portfólio foi pensado para ser **minimalista, moderno e intuitivo**
 
 💡 *Dê uma olhada e fique à vontade para entrar em contato!* 😃  
 📩 **gustavo.rosano@outlook.com**  
-🔗 [LinkedIn](https://www.linkedin.com/in/gustavo-rosano/) | [Whatsapp](https://wa.me/5511988672712) | [Portifolio](https://gustavorosano.netlify.app)
+🔗 [LinkedIn](https://www.linkedin.com/in/gustavo-rosano/) | [Whatsapp](https://wa.me/5511988672712)
